@@ -13,13 +13,14 @@ import {
   Theme
 } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import { CssBaseline } from "@material-ui/core";
+
+import ResponsiveDrawer2 from "./UI/ResponsiveDrawer/ResponsiveDrawer2";
+import TestCardDisplay from "./UI/TestCardDisplay/TestCardDisplay";
 
 import PaddedDivider from "./UI/CustomDivider/CustomDivider";
 
 import "./App.css";
-
-import ResponsiveDrawer2 from "./UI/ResponsiveDrawer/ResponsiveDrawer2";
-import { CssBaseline } from "@material-ui/core";
 
 let theme = createMuiTheme({
   palette: {
@@ -61,6 +62,7 @@ const App: React.FC = () => {
           <PaddedDivider width={75} />
           <Typography paragraph>Text2</Typography>
           <PaddedDivider />
+          <TestCardDisplay />
           {/* stop */}
       </ResponsiveDrawer2>
       </div>
