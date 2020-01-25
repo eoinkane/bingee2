@@ -19,6 +19,7 @@ import PaddedDivider from "./UI/CustomDivider/CustomDivider";
 import "./App.css";
 
 import ResponsiveDrawer2 from "./UI/ResponsiveDrawer/ResponsiveDrawer2";
+import { CssBaseline } from "@material-ui/core";
 
 let theme = createMuiTheme({
   palette: {
@@ -50,6 +51,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
+        <CssBaseline />
         <ResponsiveDrawer2>
           {/* start screen content */}
           <Typography paragraph>
